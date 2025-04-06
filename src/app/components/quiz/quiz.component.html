@@ -1,0 +1,259 @@
+<div class="quiz-container">
+    <!-- Estado de Carregamento -->
+    @if (isLoading()) {
+      <div class="loading-state">
+        <div class="spinner"></div>
+        <p>Preparando o quiz...</p>
+      </div>
+    }
+    @else {
+      <!-- Cabeçalho do Quiz -->
+      <div class="quiz-header">
+        <h1 class="quiz-title">{{ quizData()?.title || 'Título Indisponível' }}</h1>
+        
+        <!-- Barra de Progresso -->
+        <div class="progress-container">
+          <div class="progress-bar">
+            <div class="progress-fill" [style.width.%]="progress"></div>
+          </div>
+          <span class="progress-text">
+            {{ currentQuestionIndex() + 1 }} / {{ quizData()?.questions?.length || 0 }}
+          </span>
+        </div>
+      </div>
+  
+      <!-- Card da Pergunta -->
+      <div class="question-card">
+        <div class="question-content">
+          <h2 class="question-text">{{ currentQuestion.question }}</h2>
+          
+          <!-- Comentário (se existir) -->
+          @if (currentQuestion.comment) {
+            <p class="question-comment">{{ currentQuestion.comment }}</p>
+          }
+        </div>
+  
+        <!-- Grade de Opções -->
+        <div class="options-grid">
+          @for (option of currentQuestion.options; track option.id) {
+            <button 
+              class="option-button"
+              [class.selected]="answers()[currentQuestionIndex()] === option.id"
+              [class.alliance-option]="option.factionBonus === 'alliance'"
+              [class.horde-option]="option.factionBonus === 'horde'"
+              [class.neutral-option]="option.factionBonus === 'neutral'"
+              (click)="selectAnswer(option.id)">
+              
+              <span class="option-text">{{ option.name }}</span>
+              
+              <!-- Ícone da Facção -->
+              @if (option.factionBonus) {
+                <span class="faction-icon">
+                  @switch (option.factionBonus) {
+                    @case ('alliance') { 💟 }
+                    @case ('horde') { 💟 }
+                    @default { 💟 }
+                  }
+                </span>
+              }
+            </button>
+          }
+        </div>
+      </div>
+  
+      <!-- Navegação -->
+      <div class="navigation-buttons">
+        @if (currentQuestionIndex() > 0) {
+          <button class="nav-button prev-button" (click)="prevQuestion()">
+            &larr; Voltar
+          </button>
+        }
+      </div>
+    }
+  </div>
+  
+  <!-- Estilos incorporados -->
+  <style>
+    .quiz-container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 2rem;
+      font-family: 'Arial', sans-serif;
+    }
+  
+    .loading-state {
+      text-align: center;
+      padding: 3rem;
+    }
+  
+    .spinner {
+      border: 5px solid #f3f3f3;
+      border-top: 5px solid var(--primary-color, #ee3322);
+      border-radius: 50%;
+      width: 50px;
+      height: 50px;
+      animation: spin 1s linear infinite;
+      margin: 0 auto 1rem;
+    }
+  
+    @keyframes spin {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+  
+    .quiz-header {
+      margin-bottom: 2rem;
+      text-align: center;
+    }
+  
+    .quiz-title {
+      color: #333;
+      margin-bottom: 1.5rem;
+    }
+  
+    .progress-container {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      margin-top: 1rem;
+    }
+  
+    .progress-bar {
+      flex-grow: 1;
+      height: 10px;
+      background-color: #e0e0e0;
+      border-radius: 5px;
+      overflow: hidden;
+    }
+  
+    .progress-fill {
+      height: 100%;
+      background-color: var(--primary-color, #ee3322);
+      transition: width 0.3s ease;
+    }
+  
+    .progress-text {
+      font-size: 0.9rem;
+      color: #666;
+    }
+  
+    .question-card {
+      background-color: white;
+      border-radius: 10px;
+      padding: 2rem;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      margin-bottom: 2rem;
+    }
+  
+    .question-text {
+      font-size: 1.3rem;
+      color: #333;
+      margin-bottom: 1.5rem;
+    }
+  
+    .question-comment {
+      font-style: italic;
+      color: #666;
+      margin-bottom: 2rem;
+      font-size: 0.9rem;
+    }
+  
+    .options-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 1rem;
+    }
+  
+    .option-button {
+      padding: 1.2rem;
+      border: 2px solid #ddd;
+      border-radius: 8px;
+      background-color: white;
+      text-align: left;
+      cursor: pointer;
+      transition: all 0.2s ease;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+  
+    .option-button:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+  
+    .option-button.selected {
+      border-color: var(--primary-color, #ee3322);
+      background-color: #fff0f0;
+    }
+  
+    .alliance-option {
+      border-color: #000000;
+    }
+  
+    .alliance-option:hover, .alliance-option.selected {
+      background-color: #f0f7ff;
+    }
+  
+    .horde-option {
+      border-color: #000000;
+    }
+  
+    .horde-option:hover, .horde-option.selected {
+      background-color: #fff0f0;
+    }
+  
+    .neutral-option {
+      border-color: #000000;
+    }
+  
+    .neutral-option:hover, .neutral-option.selected {
+      background-color: #f0fff0;
+    }
+  
+    .faction-icon {
+      font-size: 1.2rem;
+      margin-left: 0.5rem;
+    }
+  
+    .navigation-buttons {
+      display: flex;
+      justify-content: space-between;
+    }
+  
+    .nav-button {
+      padding: 0.8rem 1.5rem;
+      border: none;
+      border-radius: 5px;
+      background-color: #333;
+      color: white;
+      cursor: pointer;
+      transition: background-color 0.2s;
+    }
+  
+    .nav-button:hover {
+      background-color: #555;
+    }
+  
+    .prev-button {
+      background-color: #666;
+    }
+  
+    .prev-button:hover {
+      background-color: #888;
+    }
+  
+    @media (max-width: 600px) {
+      .quiz-container {
+        padding: 1rem;
+      }
+      
+      .question-card {
+        padding: 1.5rem;
+      }
+      
+      .option-button {
+        padding: 1rem;
+      }
+    }
+  </style>

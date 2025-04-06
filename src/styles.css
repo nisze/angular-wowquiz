@@ -1,1 +1,17 @@
-/* You can add global styles to this file, and also import other style files */
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ddd8f0;
+    color: #333;
+  }
+  
+  :root {
+    --primary-color: #ee3322;
+    --alliance-color: #1a4d8f;
+    --horde-color: #8b0000;
+    --neutral-color: #4d8f1a;
+    --light-gray: #f0f0f0;
+    --dark-gray: #666;
+  }

@@ -1,0 +1,184 @@
+{
+  "title": "Qual raça do World of Warcraft você seria?",
+  "questions": [
+    {
+      "id": 1,
+      "question": "Qual dessas características mais combina com você?",
+      "options": [
+        { "id": 1, "name": "Levanta sofá com uma mão e a moral com a outra", "alias": "A", "factionBonus": "alliance" },
+        { "id": 2, "name": "Conselheiro espiritual não-oficial da galera", "alias": "B", "factionBonus": "alliance" },
+        { "id": 3, "name": "Desvia até de spoiler e ainda chega antes", "alias": "C", "factionBonus": "alliance" },
+        { "id": 4, "name": "Curioso a ponto de perguntar até pro Google por que perguntamos tudo pra ele", "alias": "D", "factionBonus": "alliance" },
+        { "id": 5, "name": "O bicho do mato (literalmente)", "alias": "E", "factionBonus": "horde" },
+        { "id": 6, "name": "Sobrevive até a churrasco sem carne", "alias": "F", "factionBonus": "horde" }
+      ]
+    },
+    {
+      "id": 2,
+      "question": "Qual ambiente você prefere?",
+      "options": [
+        { "id": 1, "name": "Castelo chique com muralha ", "alias": "A", "factionBonus": "alliance" },
+    { "id": 2, "name": "Floresta mística com cheirinho de mato e magia", "alias": "B", "factionBonus": "alliance" },
+    { "id": 3, "name": "Uma caverna estilosa ou aquele cantinho sombrio", "alias": "C", "factionBonus": "alliance" },
+    { "id": 4, "name": "Um lugar com mais livros do que gente", "alias": "D", "factionBonus": "alliance" },
+    { "id": 5, "name": "Me enfio na selva e viro lenda urbana", "alias": "E", "factionBonus": "horde" },
+    { "id": 6, "name": "No meio do deserto, estilo sobrevivente raiz", "alias": "F", "factionBonus": "horde" }
+      ]
+    },
+    {
+      "id": 3,
+      "question": "Quão boa é sua higiene diária?",
+      "options": [
+        {"id": 1, "name": "Impecável - banho 2x/dia + skincare", "alias": "A", "factionBonus": "alliance"},
+        {"id": 2, "name": "Normal - banho diário básico", "alias": "B", "factionBonus": "neutral"},
+        {"id": 3, "name": "Sobrevivência - banho quando lembra", "alias": "C", "factionBonus": "horde"},
+        {"id": 4, "name": "O que é higiene?", "alias": "D", "factionBonus": "horde"},
+        {"id": 5, "name": "Uso perfume de taverna", "alias": "E", "factionBonus": "horde"}
+      ],
+      "comment": "KEKW"
+    },
+    {
+      "id": 4,
+      "question": "Qual sua reação ao ver um inimigo ferido?",
+      "options": [
+        { "id": 1, "name": "Chamo o SAMU e ainda dou água", "alias": "A", "factionBonus": "alliance" },
+        { "id": 2, "name": "Dou o golpe de misericórdia (com estilo)", "alias": "B", "factionBonus": "horde" },
+        { "id": 3, "name": "Primeiro pego o loot, depois penso", "alias": "C", "factionBonus": "horde" },
+        { "id": 4, "name": "Hora de testar aquele feitiço novo...", "alias": "D", "factionBonus": "horde" },
+        { "id": 5, "name": "Um zumbi a mais nunca é demais", "alias": "E", "factionBonus": "horde" }
+      ]
+      
+    },
+    {
+      "id": 5,
+      "question": "Qual comida você prefere?",
+      "options": [
+        { "id": 1, "name": "Banquete digno de rei, com guardanapo de linho", "alias": "A", "factionBonus": "alliance" },
+        { "id": 2, "name": "Carne quase mugindo ainda, direto do fogo", "alias": "B", "factionBonus": "horde" },
+        { "id": 3, "name": "Peguei da árvore agora, tá fresquinho!", "alias": "C", "factionBonus": "neutral" },
+        { "id": 4, "name": "Se não brilhar no escuro, tá valendo", "alias": "D", "factionBonus": "horde" },
+        { "id": 5, "name": "Dispenso comida, vivo de energia arcana", "alias": "E", "factionBonus": "alliance" }
+      ]
+      
+    },
+    {
+      "id": 6,
+      "question": "Como você resolve problemas?",
+      "options": [
+        { "id": 1, "name": "Plano A, B, C e um PowerPoint", "alias": "A", "factionBonus": "alliance" },
+        { "id": 2, "name": "Se não resolve na porrada, aumento a porrada", "alias": "B", "factionBonus": "horde" },
+        { "id": 3, "name": "Magia resolve tudo... ou quase tudo", "alias": "C", "factionBonus": "neutral" },
+        { "id": 4, "name": "A culpa é sua, aceita", "alias": "D", "factionBonus": "neutral" },
+        { "id": 5, "name": "Vai no chute e seja o que Eluna quiser", "alias": "E", "factionBonus": "horde" }
+      ]
+      
+    },
+    {
+      "id": 7,
+      "question": "Qual é seu estilo de moda?",
+      "options": [
+        { "id": 1, "name": "Brilho, glamour e armadura sem um arranhão", "alias": "A", "factionBonus": "alliance" },
+        { "id": 2, "name": "Couro, espinhos e cara de mal", "alias": "B", "factionBonus": "horde" },
+        { "id": 3, "name": "Roupas que me fazem invisível (quase)", "alias": "C", "factionBonus": "horde" },
+        { "id": 4, "name": "Se não tá rasgado demais, serve", "alias": "D", "factionBonus": "horde" },
+        { "id": 5, "name": "Pintura corporal e muita atitude", "alias": "E", "factionBonus": "horde" }
+      ]
+      
+    },
+    {
+      "id": 8,
+      "question": "Qual destas frases você mais diria?",
+      "options": [
+        { "id": 1, "name":  "Em nome da honra e da luz, seguimos juntos!", "alias": "A", "factionBonus": "alliance" },
+        { "id": 2, "name": "Glória ou derrota! Aqui a luta é tudo!", "alias": "B", "factionBonus": "horde" },
+        { "id": 3, "name": "???????????????????", "alias": "C", "factionBonus": "neutral" },
+        { "id": 4, "name": "Mim quer gold agora!", "alias": "D", "factionBonus": "horde" },
+        { "id": 5, "name": "Você não pega vela", "alias": "E", "factionBonus": "neutral" }
+      ]
+      
+    },
+    {
+      "id": 9,
+      "question": "Como é sua mesa de trabalho?",
+      "options": [
+        { "id": 1, "name": "Tudo alinhado com régua e post-it", "alias": "A", "factionBonus": "alliance" },
+        { "id": 2, "name": "Caos organizado (eu acho)", "alias": "B", "factionBonus": "horde" },
+        { "id": 3, "name": "Tem um esquilo morando ali faz dias", "alias": "C", "factionBonus": "neutral" },
+        { "id": 4, "name": "Mesa? Isso é coisa de burguês", "alias": "D", "factionBonus": "horde" },
+        { "id": 5, "name": "Cuidado, um portal dimensional pode sugar você", "alias": "E", "factionBonus": "neutral" }
+      ]
+      
+    },
+    {
+      "id": 10,
+      "question": "Qual desses animais seria seu pet ideal?",
+      "options": [
+        { "id": 1, "name": "Cavalo nobre, digno de desfiles épicos", "alias": "A", "factionBonus": "alliance" },
+        { "id": 2, "name": "Lobo selvagem que uiva com estilo", "alias": "B", "factionBonus": "horde" },
+        { "id": 3, "name": "Coruja que sabe mais que muito mago", "alias": "C", "factionBonus": "neutral" },
+        { "id": 4, "name": "Rato de esgoto com carisma duvidoso", "alias": "D", "factionBonus": "horde" },
+        { "id": 5, "name": "Um dragão, óbvio. Vai ter pet melhor?", "alias": "E", "factionBonus": "alliance" }
+      ]
+      
+    }
+  ],
+  "results": {
+    "factionLogic": {
+      "alliance": " Você pertence à ALIANÇA! (Pessoas limpas e organizadas)",
+      "horde": " Você pertence à HORDA! (Pessoas... 'autênticas')",
+      "neutral": "⚖️ Você é Pandarén e precisa escolher um lado!"
+    },
+    "Aliança": {
+      "Humano": {
+        "desc": "Versáteis e adaptáveis, os humanos são conhecidos por sua bravura e espírito indomável. Representam o melhor do que a Aliança tem a oferecer.",
+        "match": ["A", "D", "A", "A", "A", "A", "A", "A", "A", "A"]
+      },
+      "Anão": {
+        "desc": "Resistentes e amantes de cerveja, os anões são especialistas em combate corpo a corpo e têm uma rica herança cultural.",
+        "match": ["A", "A", "A", "A", "A", "A", "A", "A", "A", "A"]
+      },
+      "Elfo Noturno": {
+        "desc": "Místicos e conectados à natureza, os elfos noturnos são guardiões antigos de Azeroth com habilidades druídicas excepcionais.",
+        "match": ["B", "B", "E", "B", "E", "C", "C", "C", "C", "C"]
+      },
+      "Gnomo": {
+        "desc": "Gênios inventivos com soluções tecnológicas para tudo. Pequenos em tamanho, mas gigantes em intelecto.",
+        "match": ["D", "D", "F", "D", "F", "D", "F", "D", "E", "E"]
+      },
+      "Draenei": {
+        "desc": "Nobres exilados com tecnologia avançada e conexão divina. Sua fé na Luz os sustenta nas batalhas.",
+        "match": ["B", "A", "B", "B", "B", "A", "A", "A", "A", "A"]
+      }
+    },
+    "Horda": {
+      "Orc": {
+        "desc": "Guerreiros nascidos para batalha, os orcs valorizam honra acima de tudo, apesar de um passado sombrio.",
+        "match": ["A", "A", "A", "A", "A", "B", "B", "B", "B", "B"]
+      },
+      "Troll": {
+        "desc": "Tribais e espirituais, os trolls dominam vodu e combate com lanças, conhecidos por sua regeneração rápida.",
+        "match": ["C", "E", "C", "C", "C", "C", "D", "D", "D", "D"]
+      },
+      "Tauren": {
+        "desc": "Gigantes pacíficos que vivem em harmonia com a natureza, mas terríveis quando provocados.",
+        "match": ["E", "E", "E", "E", "E", "E", "E", "C", "C", "C"]
+      },
+      "Morto-vivo": {
+        "desc": "Libertos do controle do Lich Rei, os Renegados usam alquimia e poderes sombrios para sobreviver.",
+        "match": ["C", "C", "D", "E", "D", "D", "D", "D", "B", "D"]
+      },
+      "Goblin": {
+        "desc": "Espertos e gananciosos, os goblins são mestres do comércio e da tecnologia explosiva.",
+        "match": ["F", "F", "E", "D", "F", "F", "F", "D", "B", "E"]
+      }
+    }
+  },
+  "scoring": {
+    "description": "Cada resposta Horda/Aliança dá +1 ponto para a facção. Empate vai para Pandarén.",
+    "thresholds": {
+      "alliance": 6,
+      "horde": 6,
+      "neutral": "resto"
+    }
+  }
+}

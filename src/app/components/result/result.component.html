@@ -1,0 +1,27 @@
+<div class="result-container">
+    <div class="result-header">
+      <h1>Seu Resultado</h1>
+    </div>
+  
+    <div class="result-content" [class.alliance]="factionClass === 'alliance'" 
+    [class.horde]="factionClass === 'horde'"
+    [class.neutral]="factionClass === 'neutral'">
+          <h2>{{ result.factionText }}</h2>
+      
+      <div class="faction-image">
+        <img [src]="factionImage" [alt]="result.faction + ' faction'">
+      </div>
+      
+      @if (factionClass != 'neutral') {
+      <div class="race-result">
+        <h3>Você seria um: {{ result.race }}</h3>
+        <p>{{ result.raceDescription }}</p>
+      </div>
+    }
+
+  
+      <button class="restart-button" (click)="restartQuiz()">
+        Fazer o teste novamente
+      </button>
+    </div>
+  </div>

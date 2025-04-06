@@ -1,0 +1,114 @@
+.quiz-container {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  .loading {
+    text-align: center;
+    padding: 2rem;
+    font-size: 1.2rem;
+  }
+  
+  .quiz-header {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  
+  .quiz-header h1 {
+    color: #ee3322;
+    font-size: 2rem;
+  }
+  
+  .progress-bar {
+    height: 10px;
+    background: #f0f0f0;
+    border-radius: 5px;
+    margin-top: 1rem;
+    overflow: hidden;
+  }
+  
+  .progress-bar .progress {
+    height: 100%;
+    background: linear-gradient(to right, #ee3322, #ff6b6b);
+    transition: width 0.5s ease;
+  }
+  
+  .question-container {
+    margin: 2rem 0;
+  }
+  
+  .question-container .question h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+    color: #333;
+  }
+  
+  .question-container .question .comment {
+    font-style: italic;
+    color: #666;
+    margin-bottom: 1rem;
+  }
+  
+  .options {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+  
+  .options button {
+    padding: 1rem;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    background: white;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .options button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  }
+  
+  .options button.selected {
+    border-color: #ee3322;
+    background: #ffeeee;
+  }
+  
+  .options button.alliance {
+    border-color: #000000;
+  }
+  
+  .options button.alliance:hover, 
+  .options button.alliance.selected {
+    background: #e6f0fa;
+  }
+  
+  .options button.horde {
+    border-color: #000000;
+  }
+  
+  .options button.horde:hover, 
+  .options button.horde.selected {
+    background: #fae6e6;
+  }
+  
+  .options button.neutral {
+    border-color: #000000;
+  }
+  
+  .options button.neutral:hover, 
+  .options button.neutral.selected {
+    background: #e6fae6;
+  }
+  
+  .quiz-footer {
+    text-align: center;
+    color: #666;
+    font-size: 0.9rem;
+    margin-top: 2rem;
+  }
