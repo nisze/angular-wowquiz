@@ -1,6 +1,6 @@
 ## 🎥 Demonstração da Interface
 
-![Demonstração da Interface](./GatroTour.gif)
+![Demonstração da Interface](./quizz.gif)
 
 
 # ProjetoQuiz
